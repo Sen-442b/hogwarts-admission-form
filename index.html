@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+<!-- link to gnerate our special lumos font-->
+<body>
+    
+    <div class="container">
+    <form action="">
+      <!--As of now we dont have any server to put our data into thats why action button is blank and neither there is any METHOD to be used to transfer the data given-->
+      <h1 class="main_heading">Hogwarts Application Form</h1>
+      <h2>Student Details</h2>
+      <p>Required fields are followed by *</p>
+      <p>Name * <input type="text" name="Name" required></p>
+      <!-- name tag provides the server with the heading of what data us being stored-->
+      <p>Age*<input type="number" name="Age" required></p>
+
+      <fieldset>
+        <!--used for wraping attributes -->
+        <legend>Gender*</legend>
+        <!--Title of the Field set-->
+        <p>
+          Male <input type="radio" name="Gender" id="Male" required>
+          <!--radio for selecting one option from the multithings-->
+          Female <input type="radio" name="Gender" id="Female" required>
+          <!--name should be same with respect to the buttons id'be unique-->
+        </p>
+      </fieldset>
+     
+      <p> Muggel's Mail Id* <input type="email" name="email" id="email" required></p>
+      
+      <hr >
+      <h2>Admission Information</h2>
+      <p> Hogwarts Invitation File <br> <input type="file" required></p>
+      <!-- file input type lets the user to choose any file from thier device -->
+     
+      <!-- This code snippet fro STACKOVERFLOW gives you the optin to select multi checboxes (down below) -->
+      <hr>
+      <h2>Subject Selection</h2>
+
+        <p> [Select at least 5]
+        <br>
+        <input type="checkbox" name="arthimancy" id="arthimancy">Arthimancy <br>
+        <input type="checkbox" name="Divination" id="Divination">Divination <br>
+        <input type="checkbox" name="ancient runes" id="Ancient Runes">Ancient Runes <br>
+        <input type="checkbox" name="flying ins" id="flying ins"> Flying Instructor <br>
+        <input type="checkbox" name="defence" id="defence"> Defence Against The Dark Arts<br>
+        <input type="checkbox" name="astronomy" id="astronomy"> Astronomy <br>
+        </p>
+    <input type="submit" value="Submit Now">
+    </form>
+  </div>
+  </body>
+
+  </html>
